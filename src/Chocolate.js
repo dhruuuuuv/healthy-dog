@@ -130,7 +130,7 @@ class Chocolate extends Component {
                       </Grid>
 
                       <Grid item xs>
-                          <h2>Enter weight of Chocolate consumed:</h2>
+                          <h2>Enter weight of chocolate:</h2>
                               <TextField
                                   id="weight-choc"
                                   label={this.state.weight_unit === "metric" ? "g" : "oz"}
@@ -163,7 +163,9 @@ class Chocolate extends Component {
                       <Toxicity toxicity={this.state.toxicity}/>
                   </Grid>
               </div>
-
+              <div className="section">
+                   <h5> source url: <a href="https://www.petful.com/pet-health/how-much-chocolate-toxic-dogs/"> https://www.petful.com/pet-health/how-much-chocolate-toxic-dogs/ </a> </h5>
+               </div>
           </div>
         );
     }
